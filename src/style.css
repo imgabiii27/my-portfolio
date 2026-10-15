@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+
+.home {
+  min-height: 100vh;
+  background-color: rgb(115, 151, 161);
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+.profile {
+  text-align: center;
+  padding: 40px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #222222;
+}
+
+.profile h1 {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+.projects {
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects h2,
+.about h2,
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  width: 280px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px #ddd;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #008cba;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px #443283;
+}
+
+
+.about {
+  min-height: 100vh;
+  background-color: white;
+  text-align: center;
+  padding: 100px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.contact {
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #e9f7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
